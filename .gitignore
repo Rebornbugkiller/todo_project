@@ -1,12 +1,43 @@
-# 排除所有文件和目录
-*
+# --- General ---
+.DS_Store
+Thumbs.db
 
-# 但允许 README.md
-!README.md
+# --- Node / Frontend ---
+node_modules/
+dist/
+build/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+.eslintcache
+.parcel-cache/
+.turbo/
+.next/
+out/
+.vite/
 
-# 允许 .gitignore 本身
+# --- Python / Backend ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.sqlite3
+.env
+.venv/
+venv/
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+
+# --- Docker / Runtime ---
+*.pid
+*.sock
+*.db
+*.pem
+*.crt
+*.key
+
+# Keep these tracked
 !.gitignore
-
-
-
-
+!README.md
